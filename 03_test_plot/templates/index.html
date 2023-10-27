@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="container">
+    <h2>Liste des fichiers</h2>
+    {% for f in liste %}
+    <p style="padding-left :20px"><a href="{{ f }}">{{ f }}</a></p>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - 40tude.fr </title>
+</head>
+
+<body>
+  <h1>Salut {{data.user}}</h1>
+  <p>Ta machine est : {{ data.machine }}</p>
+  <p>OS : {{ data.os }}</p>
+  <p>Distribution : </p>
+    {% for d in data.dist %}
+      <p style="padding-left :20px">{{ d }}</p>
+    {% endfor %}
+    
+    <p>Interfaces : </p>
+      {% for i in data.interfaces %}
+        <p style="padding-left :20px">{{ i }}</p>
+      {% endfor %}
+      
+</body>
+</html>

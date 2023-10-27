@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{ title }} - 40tude.fr </title>
+</head>
+
+<body>
+  <h1>Liste des fichiers</h1>
+    {% for f in liste %}
+      <p style="padding-left :20px">{{ f }}</p>
+      <a href="{{ f }}">{{ f }}</a>
+    {% endfor %}
+    
+      
+</body>
+</html>

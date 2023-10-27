@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="container-fluid">
+  <div class="container">
+
+    <!-- Noter la façon de passer l'url -->
+    <a href="{{  url_for('home')}}">Home</a>
+
+    <h2>Contenu du fichier : {{ path }}</h2>
+    {% for line in contenu %}
+    <p style="padding-left:20px"> {{ line }}</p>
+    {% endfor %}
+
+  </div>
+</div>
+{% endblock %}
+
+
+
+{% block script %}
+  {# On peut avoir des scripts différents par page. Voir contenu.html par ex. #}
+{% endblock%}
