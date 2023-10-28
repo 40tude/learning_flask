@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Hello </h1>
+  <p>Je suis : {{ first_name }}</p>
+  <p>{{ stuff | safe }}</p>
+  <p>{{ stuff | striptags }}</p>
+
+  <h1>Pizzas - for loop</h1>
+  {% for piz in lst_pizzas %}
+    {{piz}}<br/>
+  {% endfor %}  
+  
+  <h1>Access one element of the list</h1>
+  {{lst_pizzas.0}}<br/>
+  {{lst_pizzas.3 + 5}}<br/>
+  {{lst_pizzas.3 + 3.14}}<br/>
+
+
+  <h1>Pizzas - if statement</h1>
+  {% for piz in lst_pizzas %}
+    {% if piz == 42%}
+      {{piz + 100}}<br/>  
+    {% else %}
+      {{piz}}<br/>
+    {% endif %}
+  {% endfor %}  
+  
+</body>
+</html>

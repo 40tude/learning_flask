@@ -35,13 +35,14 @@ def index():
     "pizza 1",
     "pizza 2",
     "pizza 3",
-    42
+    42              # Aller voir qu'on peut calculer dans html !!
   ]
   return render_template("index.html", first_name=first_name, stuff=stuff, lst_pizzas=lst_pizzas)
 
 @app.route('/user/<name>')
 def user(name):                         # Pas oublier "name" en paramètre !!!! 
   return render_template("user.html", user_name=name)
+
 
 
 if __name__ == "__main__":
