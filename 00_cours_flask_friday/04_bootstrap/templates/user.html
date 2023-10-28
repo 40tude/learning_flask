@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+  <!-- <h1>Salut {{ user_name }} </h1> -->
+  <!-- On utilise un filtre -->
+  <!-- <h1>Salut {{ user_name | upper }} </h1>  -->
+  <h1>Salut {{ user_name | capitalize }} </h1> 
+  
+  {% endblock %}
